@@ -53,7 +53,7 @@ class PhoneNumbersViewController: UIViewController, UITableViewDelegate, UITable
         case 3:
             self.title = "Self Support Hotlines"
         case 4:
-            self.title = "Labor/Sex Trafficking Hotlines"
+            self.title = "Trafficking Hotlines"
         case 5:
             self.title = "Other Hotlines"
         default: break
