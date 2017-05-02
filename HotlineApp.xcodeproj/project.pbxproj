@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		080B6C061EB2F415006B1593 /* ColorCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B6C051EB2F415006B1593 /* ColorCreator.swift */; };
+		080B6C081EB53C72006B1593 /* OfflineOnlineChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B6C071EB53C72006B1593 /* OfflineOnlineChecker.swift */; };
 		0812D7F61E9F3B4A00A2FB71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0812D7F51E9F3B4A00A2FB71 /* AppDelegate.swift */; };
-		0812D7F81E9F3B4A00A2FB71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0812D7F71E9F3B4A00A2FB71 /* ViewController.swift */; };
 		0812D7FB1E9F3B4A00A2FB71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0812D7F91E9F3B4A00A2FB71 /* Main.storyboard */; };
 		0812D7FD1E9F3B4A00A2FB71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0812D7FC1E9F3B4A00A2FB71 /* Assets.xcassets */; };
 		0812D8001E9F3B4A00A2FB71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0812D7FE1E9F3B4A00A2FB71 /* LaunchScreen.storyboard */; };
 		0812D80B1E9F3B4A00A2FB71 /* HotlineAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0812D80A1E9F3B4A00A2FB71 /* HotlineAppTests.swift */; };
 		0812D8161E9F3B4A00A2FB71 /* HotlineAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0812D8151E9F3B4A00A2FB71 /* HotlineAppUITests.swift */; };
+		0812D8271EA05A0A00A2FB71 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0812D8261EA05A0A00A2FB71 /* Categories.swift */; };
+		0871905C1EABD31A009DA33A /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0871905B1EABD31A009DA33A /* CategoriesViewController.swift */; };
+		0872203F1EAC4D7C0029DD21 /* PhoneNumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0872203E1EAC4D7C0029DD21 /* PhoneNumbersViewController.swift */; };
+		087220411EAD16E70029DD21 /* TableCellSubclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087220401EAD16E70029DD21 /* TableCellSubclass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		080B6C051EB2F415006B1593 /* ColorCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCreator.swift; sourceTree = "<group>"; };
+		080B6C071EB53C72006B1593 /* OfflineOnlineChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfflineOnlineChecker.swift; sourceTree = "<group>"; };
 		0812D7F21E9F3B4A00A2FB71 /* HotlineApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotlineApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0812D7F51E9F3B4A00A2FB71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0812D7F71E9F3B4A00A2FB71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0812D7FA1E9F3B4A00A2FB71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0812D7FC1E9F3B4A00A2FB71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0812D7FF1E9F3B4A00A2FB71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +53,10 @@
 		0812D8111E9F3B4A00A2FB71 /* HotlineAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HotlineAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0812D8151E9F3B4A00A2FB71 /* HotlineAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotlineAppUITests.swift; sourceTree = "<group>"; };
 		0812D8171E9F3B4A00A2FB71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0812D8261EA05A0A00A2FB71 /* Categories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		0871905B1EABD31A009DA33A /* CategoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		0872203E1EAC4D7C0029DD21 /* PhoneNumbersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumbersViewController.swift; sourceTree = "<group>"; };
+		087220401EAD16E70029DD21 /* TableCellSubclass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCellSubclass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				0812D7F51E9F3B4A00A2FB71 /* AppDelegate.swift */,
-				0812D7F71E9F3B4A00A2FB71 /* ViewController.swift */,
 				0812D7F91E9F3B4A00A2FB71 /* Main.storyboard */,
+				0812D8281EA05A0D00A2FB71 /* Model */,
+				0812D8231EA0592B00A2FB71 /* View Controllers */,
 				0812D7FC1E9F3B4A00A2FB71 /* Assets.xcassets */,
 				0812D7FE1E9F3B4A00A2FB71 /* LaunchScreen.storyboard */,
 				0812D8011E9F3B4A00A2FB71 /* Info.plist */,
@@ -123,6 +134,26 @@
 				0812D8171E9F3B4A00A2FB71 /* Info.plist */,
 			);
 			path = HotlineAppUITests;
+			sourceTree = "<group>";
+		};
+		0812D8231EA0592B00A2FB71 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				087220401EAD16E70029DD21 /* TableCellSubclass.swift */,
+				0871905B1EABD31A009DA33A /* CategoriesViewController.swift */,
+				0872203E1EAC4D7C0029DD21 /* PhoneNumbersViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		0812D8281EA05A0D00A2FB71 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0812D8261EA05A0A00A2FB71 /* Categories.swift */,
+				080B6C051EB2F415006B1593 /* ColorCreator.swift */,
+				080B6C071EB53C72006B1593 /* OfflineOnlineChecker.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +293,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0812D7F81E9F3B4A00A2FB71 /* ViewController.swift in Sources */,
+				087220411EAD16E70029DD21 /* TableCellSubclass.swift in Sources */,
+				080B6C081EB53C72006B1593 /* OfflineOnlineChecker.swift in Sources */,
+				0872203F1EAC4D7C0029DD21 /* PhoneNumbersViewController.swift in Sources */,
+				080B6C061EB2F415006B1593 /* ColorCreator.swift in Sources */,
 				0812D7F61E9F3B4A00A2FB71 /* AppDelegate.swift in Sources */,
+				0812D8271EA05A0A00A2FB71 /* Categories.swift in Sources */,
+				0871905C1EABD31A009DA33A /* CategoriesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +550,7 @@
 				0812D81C1E9F3B4A00A2FB71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0812D81D1E9F3B4A00A2FB71 /* Build configuration list for PBXNativeTarget "HotlineAppTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +559,7 @@
 				0812D81F1E9F3B4A00A2FB71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0812D8201E9F3B4A00A2FB71 /* Build configuration list for PBXNativeTarget "HotlineAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +568,7 @@
 				0812D8221E9F3B4A00A2FB71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
