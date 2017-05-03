@@ -19,8 +19,7 @@ class Categories {
             "Santa Barbara": [["Health, Housing & Human Services","211","24/7","Online","Local"],
                         ["Medi-Cal","18005415555","Mon-Fri:8am-5pm","Variable","State","8","17"]]
             ,
-            "San Francisco": [["Alameda Health,Housing & Human Services","211","24/7","Online","Local"],
-                              ["Medi-Cal","1-800-541-5555","Mon-Fri:8am-5pm","Variable","State","8","17"]]
+            "San Francisco": [["Medi-Cal","1-800-541-5555","Mon-Fri:8am-5pm","Variable","State","8","17"]]
             ]
     static var AnimalRelated: [String:[[String]]] =
         [
