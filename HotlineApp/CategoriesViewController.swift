@@ -66,12 +66,14 @@ class CategoriesViewController: UIViewController, UINavigationControllerDelegate
                     }
                 } else {
                     print("location error")
+                    for (tag,_) in Categories.categoryDict{
+                        Categories.categoryDict[tag]!["Load"]! = Categories.categoryDict[tag]!["National"]!
+                        
+                    }
                 }
                 
-                if (flag == 1) {
                     //print(Categories.categoryDict[0]?["Load"])
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue:"test"), object: nil)
-                }
             })
 
     }
