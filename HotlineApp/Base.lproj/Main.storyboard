@@ -277,6 +277,13 @@
                             <constraint firstAttribute="trailingMargin" secondItem="C4R-As-V8T" secondAttribute="trailing" constant="-7" id="zDQ-mj-QXr"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="UAu-fi-gEf">
+                        <barButtonItem key="rightBarButtonItem" title="Update" id="nSS-Wr-w59">
+                            <connections>
+                                <action selector="UpdateTapped:" destination="6FT-w7-dV2" id="g9U-oA-Zhl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="Footer" destination="lAI-Jh-9ke" id="gWX-Yb-idE"/>
                         <outlet property="tableView" destination="IcK-Pg-UtM" id="dpe-WJ-au9"/>

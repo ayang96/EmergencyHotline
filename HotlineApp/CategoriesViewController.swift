@@ -23,6 +23,14 @@ class CategoriesViewController: UIViewController, UINavigationControllerDelegate
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
         navigationController?.navigationBar.isHidden = true
+        let nc = NotificationCenter.default // Note that default is now a property, not a method call
+        nc.addObserver(forName:Notification.Name(rawValue:"update"),
+                       object:nil, queue:nil) {
+                        notification in
+                        print("updating")
+                    self.manager.startUpdatingLocation()
+                        
+        }
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -30,14 +38,20 @@ class CategoriesViewController: UIViewController, UINavigationControllerDelegate
         navigationController?.navigationBar.isHidden = true
 
     }
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("location not found")
+        for (tag,_) in Categories.categoryDict{
+            Categories.categoryDict[tag]!["Load"]! = Categories.categoryDict[tag]!["National"]!
+
+        }
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue:"test"), object: nil)
+    }
         func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         manager.stopUpdatingLocation()
-        if(updatedlocations == 0) {
             let location = locations[0]
             let geoCoder = CLGeocoder()
             geoCoder.reverseGeocodeLocation(location, completionHandler: { (placemarks, error) -> Void in
-
-                print("COUNTY")
+                print("working")
                 var flag = 0
                 if let placeMark = placemarks?[0]{
                     let county = placeMark.subAdministrativeArea
@@ -45,7 +59,8 @@ class CategoriesViewController: UIViewController, UINavigationControllerDelegate
                         for (location,numbers)in subdict {
                             if (location == county) {
                                 flag = 1
-                                Categories.categoryDict[tag]!["Load"]! = numbers +  Categories.categoryDict[tag]!["Load"]!
+
+                                Categories.categoryDict[tag]!["Load"]! = numbers +  Categories.categoryDict[tag]!["National"]!
                             }
                         }
                     }
@@ -56,11 +71,8 @@ class CategoriesViewController: UIViewController, UINavigationControllerDelegate
                 if (flag == 1) {
                     //print(Categories.categoryDict[0]?["Load"])
                     NotificationCenter.default.post(name: NSNotification.Name(rawValue:"test"), object: nil)
-                    print("flag is 1")
                 }
             })
-        }
-        updatedlocations = 1
 
     }
     

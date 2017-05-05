@@ -28,20 +28,19 @@ class PhoneNumbersViewController: UIViewController, UITableViewDelegate, UITable
         nc.addObserver(forName:Notification.Name(rawValue:"test"),
                        object:nil, queue:nil) {
                         notification in
-                        print("notification please")
                         self.tableView.reloadData()
+                        print("reloaded")
         }    }
 
-    func updateUI(notification: NSNotification) {
-        print("notification recieved")
-        tableView.reloadData()
+    @IBAction func UpdateTapped(_ sender: UIBarButtonItem) {
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue:"update"), object: nil)
     }
+
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = false
         self.navigationController?.navigationBar.barTintColor =  colormaker.UIColorFromHex(hex: 0xEB5757)
         self.navigationController?.navigationBar.tintColor =  colormaker.UIColorFromHex(hex: 0xFDE6E8)
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:colormaker.UIColorFromHex(hex: 0xFDE6E8)]
-         //self.navigationController?.navigationItem.backBarButtonItem?.title = "WHAT"
        
         switch tag! {
         case 0:
@@ -59,7 +58,6 @@ class PhoneNumbersViewController: UIViewController, UITableViewDelegate, UITable
         default: break
             
         }
-        //navigationController?.navigationBar.title
         
     }
     
