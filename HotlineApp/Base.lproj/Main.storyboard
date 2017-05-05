@@ -280,7 +280,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="UAu-fi-gEf">
                         <rightBarButtonItems>
-                            <barButtonItem title="Update" id="nSS-Wr-w59">
+                            <barButtonItem title="Refresh" id="nSS-Wr-w59">
                                 <connections>
                                     <action selector="UpdateTapped:" destination="6FT-w7-dV2" id="g9U-oA-Zhl"/>
                                 </connections>

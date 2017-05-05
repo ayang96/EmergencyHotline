@@ -48,11 +48,12 @@ class CategoriesViewController: UIViewController, UINavigationControllerDelegate
     }
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("location not found")
-        for (tag,_) in Categories.categoryDict{
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue:"test"), object: nil)
+        /*for (tag,_) in Categories.categoryDict{
             Categories.categoryDict[tag]!["Load"]! = Categories.categoryDict[tag]!["National"]!
 
         }
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue:"test"), object: nil)
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue:"test"), object: nil)*/
     }
         func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         manager.stopUpdatingLocation()
@@ -71,10 +72,11 @@ class CategoriesViewController: UIViewController, UINavigationControllerDelegate
                     }
                 } else {
                     print("location error")
-                    for (tag,_) in Categories.categoryDict{
+                    NotificationCenter.default.post(name: NSNotification.Name(rawValue:"test"), object: nil)
+                    /*for (tag,_) in Categories.categoryDict{
                         Categories.categoryDict[tag]!["Load"]! = Categories.categoryDict[tag]!["National"]!
                         
-                    }
+                    }*/
                 }
                 
                     //print(Categories.categoryDict[0]?["Load"])
