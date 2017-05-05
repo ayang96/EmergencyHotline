@@ -30,8 +30,7 @@ class CategoriesViewController: UIViewController, UINavigationControllerDelegate
         navigationController?.navigationBar.isHidden = true
 
     }
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         manager.stopUpdatingLocation()
         if(updatedlocations == 0) {
             let location = locations[0]
