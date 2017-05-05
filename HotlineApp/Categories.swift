@@ -8,6 +8,7 @@
 
 import Foundation
 //Tag for how to deal with online, offline is based off of "Variable" "None" and "Online" index 3
+//"Load" key holds the numbers that will be loaded to the tableview
 class Categories {
     static var Medical: [String:[[String]]] =
         [

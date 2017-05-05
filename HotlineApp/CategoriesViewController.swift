@@ -18,12 +18,18 @@ class CategoriesViewController: UIViewController, UINavigationControllerDelegate
         super.viewDidLoad()
         Medical.layer.cornerRadius = 100
         //Medical.layer.maskToBounds=true
+        
+        //Setup location services
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
+        
+        
         navigationController?.navigationBar.isHidden = true
-        let nc = NotificationCenter.default // Note that default is now a property, not a method call
+        
+        //An observer to update location when the update button is pressed
+        let nc = NotificationCenter.default
         nc.addObserver(forName:Notification.Name(rawValue:"update"),
                        object:nil, queue:nil) {
                         notification in
@@ -34,6 +40,8 @@ class CategoriesViewController: UIViewController, UINavigationControllerDelegate
         
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    //Make sure that when going back to this view, the navbar is hidden
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = true
 
@@ -52,14 +60,11 @@ class CategoriesViewController: UIViewController, UINavigationControllerDelegate
             let geoCoder = CLGeocoder()
             geoCoder.reverseGeocodeLocation(location, completionHandler: { (placemarks, error) -> Void in
                 print("working")
-                var flag = 0
                 if let placeMark = placemarks?[0]{
                     let county = placeMark.subAdministrativeArea
                     for (tag,subdict) in Categories.categoryDict{
                         for (location,numbers)in subdict {
                             if (location == county) {
-                                flag = 1
-
                                 Categories.categoryDict[tag]!["Load"]! = numbers +  Categories.categoryDict[tag]!["National"]!
                             }
                         }
@@ -78,28 +83,25 @@ class CategoriesViewController: UIViewController, UINavigationControllerDelegate
 
     }
     
-    
+    //If a button other than the 911 button is pressed, then segue to the list of phone numbers
     @IBAction func CategoryPressed(_ sender: UIButton) {
         tag = sender.tag
         performSegue(withIdentifier: "CategoriesToPhone", sender: self)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-    /// Send any data to other MVC's before this MVC disappears
-    ///
-    /// - Parameters:
-    ///   - segue: the segue between this MVC and the MVC we are about to go to
-    ///   - sender: the button/table view/ etc. that instigated this segue
-    ///             In this app, it is either the "View Photo" or "View Name" button
     @IBOutlet weak var Call911: UIButton!
     
+    //if 911 button is pressed, call 911
     @IBAction func ButtonPressed(_ sender: Any) {
         guard let number = URL(string: "telprompt://" + "911") else { return }
         UIApplication.shared.open(number, options: [:], completionHandler: nil)
     }
+    
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "CategoriesToPhone" {
             if let destinationVC = segue.destination as? PhoneNumbersViewController {

@@ -8,6 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -278,13 +279,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UAu-fi-gEf">
-                        <barButtonItem key="rightBarButtonItem" title="Update" id="nSS-Wr-w59">
-                            <connections>
-                                <action selector="UpdateTapped:" destination="6FT-w7-dV2" id="g9U-oA-Zhl"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Update" id="nSS-Wr-w59">
+                                <connections>
+                                    <action selector="UpdateTapped:" destination="6FT-w7-dV2" id="g9U-oA-Zhl"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item" id="9uS-GF-gKj"/>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="ActivityUpdate" destination="9uS-GF-gKj" id="qYG-0X-9XZ"/>
                         <outlet property="Footer" destination="lAI-Jh-9ke" id="gWX-Yb-idE"/>
                         <outlet property="tableView" destination="IcK-Pg-UtM" id="dpe-WJ-au9"/>
                     </connections>

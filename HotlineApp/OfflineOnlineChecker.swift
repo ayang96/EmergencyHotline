@@ -7,6 +7,7 @@
 //
 
 import Foundation
+//Class that checks if a hotline is online or offline
 class OfflineOnlineChecker {
     let weekday: Int?
     let hour: Int?

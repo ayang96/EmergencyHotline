@@ -12,6 +12,8 @@ class ColorCreator{
     
     init() {
     }
+    
+    //A quick function to convert hexcode into UIColors
     func UIColorFromHex(hex: Int) -> UIColor {
         //let x = Float((hex & 0xFF0000) >> 16)
         
