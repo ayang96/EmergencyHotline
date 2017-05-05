@@ -181,7 +181,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IcK-Pg-UtM">
-                                <rect key="frame" x="0.0" y="64" width="375" height="521"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="524"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.90980392156862744" green="0.48627450980392156" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="6uG-D8-n2J">
@@ -196,7 +196,7 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="phoneCell" rowHeight="90" id="3Gl-2N-hOT" customClass="TableCellSubclass" customModule="HotlineApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="29" width="375" height="90"/>
+                                        <rect key="frame" x="0.0" y="28.5" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Gl-2N-hOT" id="dX2-bA-dhy">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
@@ -215,25 +215,25 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rw6-IE-vNO">
-                                                    <rect key="frame" x="15" y="60" width="42" height="16"/>
+                                                    <rect key="frame" x="15" y="59" width="42" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                                     <color key="textColor" red="0.12941176470588234" green="0.58823529411764708" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dn-Du-eKI">
-                                                    <rect key="frame" x="67" y="60" width="38" height="16"/>
+                                                    <rect key="frame" x="67" y="59" width="38" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QeW-oR-Wcc">
-                                                    <rect key="frame" x="15" y="16" width="307.5" height="16"/>
+                                                    <rect key="frame" x="15" y="15" width="308" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="National" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRJ-ma-J9i">
-                                                    <rect key="frame" x="15" y="38" width="53" height="16"/>
+                                                    <rect key="frame" x="15" y="37" width="53" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                                     <color key="textColor" red="0.050980392156862744" green="0.27843137254901962" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -271,7 +271,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="IcK-Pg-UtM" secondAttribute="trailing" constant="-16" id="6DS-Zd-0sC"/>
                             <constraint firstItem="xve-IC-T5B" firstAttribute="top" secondItem="C4R-As-V8T" secondAttribute="bottom" constant="2" id="7vM-LK-pZL"/>
                             <constraint firstItem="IcK-Pg-UtM" firstAttribute="leading" secondItem="FzZ-rE-lO2" secondAttribute="leadingMargin" constant="-16" id="LI8-y6-RSs"/>
-                            <constraint firstItem="C4R-As-V8T" firstAttribute="top" secondItem="IcK-Pg-UtM" secondAttribute="bottom" constant="5" id="LZs-Oh-OlH"/>
+                            <constraint firstItem="C4R-As-V8T" firstAttribute="top" secondItem="IcK-Pg-UtM" secondAttribute="bottom" constant="2" id="LZs-Oh-OlH"/>
                             <constraint firstItem="C4R-As-V8T" firstAttribute="leading" secondItem="FzZ-rE-lO2" secondAttribute="leadingMargin" constant="-8" id="b6M-2a-ULr"/>
                             <constraint firstItem="IcK-Pg-UtM" firstAttribute="top" secondItem="Ich-gP-grH" secondAttribute="bottom" id="piu-JP-BBJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="C4R-As-V8T" secondAttribute="trailing" constant="-7" id="zDQ-mj-QXr"/>

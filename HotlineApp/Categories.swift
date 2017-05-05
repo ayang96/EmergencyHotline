@@ -14,7 +14,7 @@ class Categories {
             "Load": [["National STD Hotline","8002278922","24/7","Online","National"],
                          ["Poison Control Hotline","8002221222","24/7","Online","National"],
                          ["Planned Parenthood Hotline","8002307526","24/7","Online","National"]],
-            "Alameda": [["Health,Housing & Human Services","211","24/7","Online","Local"],
+            "Alameda": [["Health, Housing & Human Services","211","24/7","Online","Local"],
                         ["Medi-Cal","18005415555","Mon-Fri:8am-5pm","Variable","State","8","17"]],
             "Santa Barbara": [["Health, Housing & Human Services","211","24/7","Online","Local"],
                         ["Medi-Cal","18005415555","Mon-Fri:8am-5pm","Variable","State","8","17"]]
